@@ -1,0 +1,97 @@
+
+#jordan1 {
+    animation: zapatilla_animacion ease-in-out infinite 4s;
+    width: 500px;
+    height: 500px;
+}
+
+@keyframes zapatilla_animacion {
+    0% {
+        transform: translateY(-10%)
+    }
+
+    50% {
+        transform: translateY(0%)
+    }
+
+    100% {
+        transform: translateY(-10%)
+    }
+}
+
+body {
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+    font-family: 'Anek Malayalam', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+
+
+#logo {
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    width: 180px;
+    height: 140px;
+    z-index: -10;
+}
+
+#navbar{
+    background: linear-gradient( #2fc2e0, #1745cf);
+    border-radius: 25px;
+    z-index: 1;
+    position: static;
+    font-family: 'Anek Malayalam', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.nav-link:first-child{
+     border-right:solid 1px #040404; 
+     
+     
+}
+
+.nav-item{
+    padding: 8px;
+}
+
+
+
+.rating-container{
+    transform: rotateY(180deg);
+}
+
+input{
+    display: none;
+}
+
+label{
+    display: inline-block;
+    color: grey;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+label:not(:last-child){
+    margin-right: 5px;
+}
+
+input:checked ~ label,
+input:hover ~ label {
+    color: #e8d611;
+}
+
+input:hover ~ label {
+    transform: scale(1.2)rotate(-30deg);
+}
+
+.container{
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+
+
